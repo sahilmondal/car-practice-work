@@ -5,12 +5,12 @@
 
 }
 body{
-    height: 100px;
+    height: 100%;
 }
 
 
 .container{
-    height: 100vh;
+    height: 100%;
     width: 200vw;
   background: url(assets/Img_1.png);
  background-size: cover;
@@ -43,19 +43,19 @@ body{
 .car{
 position: absolute;
 bottom: 13vh;
-animation: car 1s linear infinite;
-animation: move 5s linear infinite;
+animation: car 2s linear infinite , move 5s linear infinite;
+
 
 }
 @keyframes car{
     0%{
-transform: translateY(-2px);
+transform: translateY(-4px);
     }
     50%{
-        transform: translateY(2px);
+        transform: translateY(8px);
     }
     100%{
-        transform: translateY(-1px);
+        transform: translateY(-4px);
 
     }
 }
