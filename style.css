@@ -14,7 +14,7 @@ body{
     width: 200vw;
   background: url(assets/Img_1.png);
  background-size: cover;
-  animation: bg 15s infinite linear;
+  animation: bg 12s infinite linear;
   background-repeat: repeat-x;
     
 }
