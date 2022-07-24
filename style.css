@@ -6,6 +6,7 @@
 }
 body{
     Text-align:center;
+    Overflow: hidden;
 }
 
 
@@ -16,6 +17,7 @@ body{
  background-size: cover;
   animation: bg 12s infinite linear;
   background-repeat: repeat-x;
+Overflow: hidden;
     
 }
 @keyframes bg{
@@ -30,6 +32,7 @@ body{
     width: 3000px;
     position: absolute;
     bottom: 0;
+Overflow: hidden;
  
     animation: road 2s infinite linear;
  background-repeat: repeat-x;
@@ -49,7 +52,7 @@ animation: move 4s linear infinite;
     0%{
  
        transform: translateX(0px);
-transform: translateY(-2px);
+       transform: translateY(-2px);
     }
     30%{
         transform: translateX(30px);
@@ -57,7 +60,7 @@ transform: translateY(-2px);
        }
     50%{
         transform: translateX(80px);
-transform: translateY(6px);
+        transform: translateY(6px);
     }
     100%{
         transform: translateX(0px);
