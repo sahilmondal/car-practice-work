@@ -69,7 +69,7 @@ h3 {
 .road {
   position: absolute;
   background-image: url(assets/Img_02.png);
-  width: 200vw;
+  width: 300vw;
   position: absolute;
   overflow: hidden;
   height: 25vh;
@@ -85,19 +85,19 @@ h3 {
   }
 
   20% {
-    transform: translateX(-20vw);
+    transform: translateX(-30vw);
   }
   50% {
-    transform: translateX(-50vw);
+    transform: translateX(-55vw);
   }
   60% {
-    transform: translateX(-60vw);
-  }
-  80% {
     transform: translateX(-80vw);
   }
+  80% {
+    transform: translateX(-120vw);
+  }
   100% {
-    transform: translateX(-100vw);
+    transform: translateX(-180vw);
   }
 }
 .car {
