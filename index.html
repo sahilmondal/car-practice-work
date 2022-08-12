@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Running car | Sahil</title> 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Running car | Sahil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="road"></div>
-    </div>
-    <div class="car"><img src="assets/Img_06.png" alt=""></div>
+      <h3>Made with 💛 By Sahil</h3>
+      <div class="bg"></div>
 
-</body>
+      <div class="road"></div>
+      <div class="car">
+        <img class="car-img" src="assets/Img_05.png" alt="" />
+      </div>
+      <div class="btn">
+        <button id="btn" type="submit">Turn on Light 🔦</button>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const car = document.querySelector(".car-img");
+    const btn = document.querySelector("#btn");
+
+    btn.addEventListener("click", () => {
+      if (!btn.classList.contains("light-on")) {
+        car.setAttribute("src", "assets/Img_06.png");
+        btn.textContent = "Turn Off Light 🔦";
+        btn.classList.add("light-on");
+      } else {
+        car.setAttribute("src", "assets/Img_05.png");
+        btn.textContent = "Turn On Light 🔦";
+        btn.classList.remove("light-on");
+      }
+    });
+  </script>
 </html>
