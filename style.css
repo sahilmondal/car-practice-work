@@ -60,7 +60,7 @@ h3 {
 .road {
   position: absolute;
   background-image: url(assets/Img_02.png);
-  width: 3000px;
+  width: 200vw;
   position: absolute;
   overflow: hidden;
   height: 25vh;
@@ -71,8 +71,24 @@ h3 {
   background-repeat: repeat-x;
 }
 @keyframes road {
+  0% {
+    transform: translateX(0vw);
+  }
+
+  20% {
+    transform: translateX(-20vw);
+  }
+  50% {
+    transform: translateX(-50vw);
+  }
+  60% {
+    transform: translateX(-60vw);
+  }
+  80% {
+    transform: translateX(-80vw);
+  }
   100% {
-    transform: translateX(-1400px);
+    transform: translateX(-100vw);
   }
 }
 .car {
